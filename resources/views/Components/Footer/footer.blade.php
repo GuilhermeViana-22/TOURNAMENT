@@ -1,5 +1,5 @@
    <!--footer-->
-   <footer>
+   <footer class="mt-4">
     <div class="container">
         <div class="row">
             <div class="col-sm-5 mr-auto">
@@ -9,21 +9,36 @@
                     reúnem para enfrentar desafios emocionantes em um torneio eliminatório 2x2! Este é mais do que
                     apenas um evento; é uma celebração da coragem, da habilidade e da camaradagem entre jogadores.
                 </p>
-                <ul class="list-inline social social-sm">
+                <ul class="list-inline ml-4 mr-4">
                     <li class="list-inline-item">
-                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@GuiVianaPlay" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/GuilhermeViana-22" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href=""><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.tiktok.com/@guilherme_viana_play" target="_blank">
+                            <i class="fab fa-tiktok fa-2x"></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/gui_viana_play/" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href=""><i class="fab fa-twitch"></i></a>
+                        <a href="https://www.twitch.tv/guilherme_viana_play" target="_blank">
+                            <i class="fab fa-twitch fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=https://discord.gg/7GBSyNfADx" target="_blank">
+                            <i class="fab fa-discord fa-2x"></i>
+                        </a>
                     </li>
                 </ul>
             </div>

@@ -12,7 +12,10 @@
             <p class="text-light">🌟 Transmissão ao vivo de todas as emoções!</p>
         </div>
     </div>
-
+    <!-- Alerta Importante -->
+    <div class="alert alert-warning mt-4" role="alert">
+        <strong>Importância das Regras:</strong> As regras são fundamentais para garantir um campeonato saudável e divertido para todos os participantes. A colaboração de cada um é essencial!
+    </div>
     <div class="row pt-5">
         <!-- Tabela de Preços -->
         <div class="col-lg-5 col-md-5 mb-5">
@@ -55,10 +58,7 @@
         </div>
     </div>
 
-    <!-- Alerta Importante -->
-    <div class="alert alert-warning mt-4" role="alert">
-        <strong>Importância das Regras:</strong> As regras são fundamentais para garantir um campeonato saudável e divertido para todos os participantes. A colaboração de cada um é essencial!
-    </div>
+
 </div>
 
 

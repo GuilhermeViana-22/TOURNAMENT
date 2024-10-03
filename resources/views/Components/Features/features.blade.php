@@ -10,7 +10,7 @@
         <div class="col-md-12 mx-auto">
             <p class="text-muted lead mb-4">
                 Este torneio foi criado especialmente para aqueles que compartilham a paixão por Brawlhalla e seguem o
-                <strong class="name">@guilherme_viana_play</strong> em suas redes sociais. Nossa comunidade do Discord
+                <a href="https://www.instagram.com/gui_viana_play/" class="name"><strong>@guilherme_viana_play</strong></a> em suas redes sociais. Nossa comunidade do Discord
                 se uniu para oferecer uma experiência única de entretenimento e competição amigável, em um ambiente
                 fechado e acolhedor, feito de <em>jogadores para jogadores</em>.
             </p>
