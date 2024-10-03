@@ -45,13 +45,14 @@
 </div>
 
 <section style="text-align: center; margin: 20px;">
+    <p class="text-muted">Me ajude a chegar mais longe</p>
     <button
         id="shareButton"
         class="btn btn-danger"
         style="display: inline-block; color: white; padding: 15px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
     >
         <i class="fab fa-twitch" style="font-size: 24px; margin-right: 10px;"></i>
-        Compartilhe meu perfil na Twitch e chame amigos!
+        Compartilhe
     </button>
 </section>
 <script>
