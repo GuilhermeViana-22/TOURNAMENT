@@ -45,7 +45,7 @@
 </div>
 
 <section style="text-align: center; margin: 20px;">
-    <p class="text-muted">Me ajude a chegar mais longe</p>
+    <p class="text-muted">Sua ajuda pode me levar ainda mais longe!</p>
     <button
         id="shareButton"
         class="btn btn-danger"
