@@ -51,16 +51,16 @@
                     <li><a href="#">Fique por Dentro das Novidades</a></li>
                 </ul>
             </div>
-            <div class="row mt-6 footer">
-                <a href="https://guilhermeviana.com/" class="footer-link">© Guilherme Viana</a>
-                <p class="footer-rights mr-2 ml-2">Todos os direitos reservados</p>
-                <div class="footer-year">
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script>
-                </div>
-            </div>
-
         </div>
     </div>
+    <div class="text-muted" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: 0; padding: 0;">
+        <a href="https://guilhermeviana.com/" class="footer-link">© Guilherme Viana</a>
+        <p>Todos os direitos reservados</p>
+        <div class="footer-year">
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </div>
+    </div>
+
 </footer>
