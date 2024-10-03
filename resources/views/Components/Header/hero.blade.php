@@ -5,9 +5,6 @@
                 <div class="d-flex justify-content-center  p-4 animate__zoomIn">
                     <img src="{{ asset('/logo/brawl.png') }}" class="img-fluid" style="max-width: 400px;" alt="Brawl Logo"/>
                 </div>
-                <div class="d-flex justify-content-center  p-4 animate__zoomIn">
-                    Warriors of Valhalla
-                </div>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
         <div class="col-12 text-center">
             <h1>Perguntas Frequentes</h2>
             <h2 class="text-muted text-center">Respostas para as dúvidas mais comuns sobre a Copa Brawlhalla.</h2>
-            <h4 class="text-muted text-center">Fornecida por Guilherme_viana_play.</h4>
+            <h4 class="text-muted text-center">Fornecida por <b class="name">@Guilherme_viana_play</b>.</h4>
         </div>
     </div>
     <hr>
