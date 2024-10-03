@@ -5,7 +5,7 @@
     <div class="row mt-5">
         <div class="col-md-4 text-center ">
             <div class="card shadow-lg hover-zoom mb-4 ">
-                <h3 class="card-title text-uppercase mt-3">Card de Participação Exclusivo</h3>
+                <h3 class="card-title text-uppercase mt-4">Card de Participação</h3>
                 <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto" alt="Card de Participação">
 
             </div>
@@ -25,8 +25,8 @@
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Prêmios Secretos Revelados?</h3>
                 <div class="card-body">
+                    <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-1" alt="Premiação Pix" style="width: 300px;">
                     <p class="card-text">Achou que só o primeiro lugar levaria prêmios? Pense de novo... 😏</p>
-                    <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4" alt="Premiação Pix" style="width: 300px;">
                 </div>
             </div>
         </div>

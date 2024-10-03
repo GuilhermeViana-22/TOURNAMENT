@@ -16,11 +16,11 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Qual é o formato do torneio?</h4>
-                    <p class="text-muted">O torneio será no formato **2x2**, onde cada equipe será composta por dois jogadores. As partidas seguem um formato de eliminação direta, e a comunicação entre os membros da equipe será fundamental para a vitória!</p>
+                    <p class="text-muted">O torneio será no formato <b class="text-warning">2x2</b>, onde cada equipe será composta por dois jogadores. As partidas seguem um formato de eliminação direta, e a comunicação entre os membros da equipe será fundamental para a vitória!</p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Como funciona a premiação?</h4>
-                    <p class="text-muted">O primeiro lugar ganhará R$ 100,00 via PIX. O segundo e o terceiro lugares receberão prêmios surpresa que serão revelados ao final do torneio. Prepare-se para recompensas incríveis!</p>
+                    <p class="text-muted">O primeiro lugar ganhará <b class="text-danger">R$ 100,00</b> via PIX. O segundo e o terceiro lugares receberão prêmios surpresa que serão revelados ao final do torneio. Prepare-se para recompensas incríveis!</p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Quem pode participar do torneio?</h4>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Como faço para me inscrever?</h4>
-                    <p class="text-muted">As inscrições podem ser feitas preenchendo um **formulário de cadastro**. Nele, você e seu parceiro de equipe devem fornecer o nome completo, nickname e o nome da equipe. Após isso, sua inscrição estará confirmada!</p>
+                    <p class="text-muted">As inscrições podem ser feitas preenchendo um <b class="text-info">formulário de cadastro</b>. Nele, você e seu parceiro de equipe devem fornecer o nome completo, nickname e o nome da equipe. Após isso, sua inscrição estará confirmada!</p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Há uma taxa de inscrição?</h4>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 mb-5">
                     <h4>Posso assistir às partidas ao vivo?</h4>
-                    <p class="text-muted">Sim! Todas as partidas serão transmitidas ao vivo no canal oficial da Twitch. Venha assistir, torcer pela sua equipe favorita e fazer parte dessa comunidade incrível!</p>
+                    <p class="text-muted">Sim! Todas as partidas serão transmitidas ao vivo no canal oficial da <b class="name">Twitch</b>. Venha assistir, torcer pela sua equipe favorita e fazer parte dessa comunidade incrível!</p>
                 </div>
             </div>
         </div>
