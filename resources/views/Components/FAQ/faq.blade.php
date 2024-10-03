@@ -45,8 +45,29 @@
 </div>
 
 <section style="text-align: center; margin: 20px;">
-    <a class="btn btn-danger" href="https://www.twitch.tv/guilherme_viana_play" target="_blank" style="display: inline-block; color: white; padding: 15px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+    <button
+        id="shareButton"
+        class="btn btn-danger"
+        style="display: inline-block; color: white; padding: 15px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
+    >
         <i class="fab fa-twitch" style="font-size: 24px; margin-right: 10px;"></i>
         Compartilhe meu perfil na Twitch e chame amigos!
-    </a>
+    </button>
 </section>
+<script>
+    document.getElementById('shareButton').addEventListener('click', function() {
+        // Copiar link para a área de transferência
+        const link = 'https://www.twitch.tv/guilherme_viana_play';
+        navigator.clipboard.writeText(link).then(() => {
+            // Exibir SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Link copiado!',
+                text: 'O link foi copiado para a área de transferência.',
+                confirmButtonText: 'OK'
+            });
+        }).catch(err => {
+            console.error('Erro ao copiar o link: ', err);
+        });
+    });
+</script>
