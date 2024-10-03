@@ -369,7 +369,26 @@ mark,
     height: auto;
 }
 
+.img-banner {
+    max-width: 80% !important;
+    height: auto;
+    animation: pulse 2s infinite; /* Animação de pulso */
+}
 
+@keyframes pulse {
+    0% {
+        opacity: 0.5; /* Opacidade baixa */
+        filter: brightness(1); /* Brilho normal */
+    }
+    50% {
+        opacity: 1; /* Opacidade normal */
+        filter: brightness(1.5); /* Aumentar brilho para simular glow */
+    }
+    100% {
+        opacity: 0.5; /* Retorna para opacidade baixa */
+        filter: brightness(1); /* Brilho normal */
+    }
+}
 
 .container {
     padding: 10px !important;
@@ -10197,10 +10216,40 @@ a:hover {
     text-align: center;
 }
 
-.profile{
-    border: 10px solid var(--cyan);
-    max-width: 300px;
-    height: 300px;
+.profile {
+    border: 5px solid transparent; /* Inicialmente a borda é transparente */
+    width: 20% !important;
+    animation: borderPulse 5s infinite; /* Animação de pulso */
+    background: linear-gradient(90deg, var(--cyan), var(--purple)); /* Gradiente entre cyan e roxo */
+    background-clip: padding-box; /* Faz o gradiente não aparecer no interior da borda */
+    position: relative; /* Para usar pseudo-elementos */
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: var(--blue); /* Azul */
+    }
+    14% {
+        border-color: var(--indigo); /* Índigo */
+    }
+    28% {
+        border-color: var(--purple); /* Roxo */
+    }
+    42% {
+        border-color: var(--pink); /* Rosa */
+    }
+    56% {
+        border-color: var(--red); /* Vermelho */
+    }
+    70% {
+        border-color: var(--orange); /* Laranja */
+    }
+    84% {
+        border-color: var(--yellow); /* Amarelo */
+    }
+    100% {
+        border-color: var(--green); /* Verde */
+    }
 }
 .name{
     color: var(--purple);

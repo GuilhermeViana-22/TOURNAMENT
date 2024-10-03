@@ -2,8 +2,7 @@
     <!-- Seção de Introdução -->
     <div class="row">
         <div class="col-md-12 text-center  p-4">
-            <img src="{{ asset('/profile/perfil.jpg') }}" alt="Guilherme Viana DEV"
-                class="img-fluid rounded-circle profile shadow-lg">
+            <img src="{{ asset('/profile/perfil.jpg') }}"  alt="Guilherme Viana DEV" class="img-fluid rounded-circle profile shadow-lg">
                 <h1 class="text-white heading-black mt-4 mb-4">Prepare-se para Brilhar no Warriors of Valhalla!</h2>
         </div>
     </div>
