@@ -1,4 +1,4 @@
-<div class="container p-4">
+<div class="container" id="faq">
         <!-- Imagens dos personagens -->
         <div class="mt-4 d-flex justify-content-center">
             <img src="{{ asset('/asset/lendas/nai.png') }}" alt="Brawlhalla - Shang" class="img-fluid m-2" style="max-width: 250px;">

@@ -1,4 +1,4 @@
-<div class="container p-4">
+<div class="container" id="new">
     <div class="mt-4 d-flex justify-content-center">
      <img src="{{ asset('/asset/lendas/shang.png') }}" alt="Brawlhalla - Nai" class="img-fluid m-2" style="max-width: 280px;">
     </div>

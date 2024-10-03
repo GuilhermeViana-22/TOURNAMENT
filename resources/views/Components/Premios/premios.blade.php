@@ -1,5 +1,10 @@
-<div class="container mt-6">
-<hr>
+<div class="container" id="premios">
+    <div class="col-md-12 mx-auto text-center ">
+        <h2 class="text-uppercase display-4 animate__animated animate__fadeInDown">Prêmios</h2>
+        <p class="text-mute">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os melhores e lute por prêmios incríveis.</p>
+
+   </div>
+
 
     <!-- Seção de Cards e Prêmios -->
     <div class="row mt-5">

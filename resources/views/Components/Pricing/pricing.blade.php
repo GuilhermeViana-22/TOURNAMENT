@@ -16,7 +16,7 @@
     <div class="row pt-5">
         <!-- Tabela de Preços -->
         <div class="col-lg-5 col-md-5 mb-5">
-            <div class="card glowing-card">
+            <div class="card  glowing-card">
                 <div class="card-body">
                     <h3 class="card-title pt-3">Inscrição Torneio</h3>
                     <h2 class="card-title text-info mb-0 pt-4">R$ 10,00</h2>
@@ -34,7 +34,7 @@
 
         <!-- Área de Regras -->
         <div class="col-lg-7 col-md-7 mb-5">
-            <div class="card">
+            <div class="card glowing-card">
                 <div class="card-body text-center">
                     <h4 class="card-title">Regras do Torneio</h4>
                     <ul class="list-unstyled text-left mt-3 pricing-list">

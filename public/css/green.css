@@ -68,14 +68,12 @@ main,
 nav,
 section {
     display: block;
+    padding: 10px;
 }
 
 body {
     margin: 0;
     font-family: 'Mokoto', sans-serif;
-    /* Use a fonte Mokoto */
-    font-size: 1rem;
-    font-weight: 400;
     line-height: 1.5;
     color: #CFD8DC;
     text-align: left;
@@ -83,9 +81,6 @@ body {
     background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(8,0,30,1) 33%, rgba(0,36,47,1) 71%, rgba(0,17,22,1) 80%);
 }
 
-.font-awesome {
-    background-image: url(https://fontawesome.com/icons/chess-knight?style=solid);
-}
 
 hr {
     box-sizing: content-box;
@@ -370,7 +365,7 @@ mark,
 
 
 .container {
-
+    padding: 10px !important;
     margin-right: auto;
     margin-left: auto;
 }
@@ -10202,12 +10197,6 @@ a:hover {
 }
 .name{
     color: var(--purple);
-}
-#shang{
-
-}
-#val{
-
 }
 
 .feature-boxes .box {
