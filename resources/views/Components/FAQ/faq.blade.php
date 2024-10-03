@@ -43,3 +43,9 @@
     </div>
     <hr>
 </div>
+<section style="text-align: center; margin: 20px;">
+    <a class="btn btn-danger" href="https://www.twitch.tv/guilherme_viana_play" target="_blank" style="display: inline-block;  padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 18px; transition: background-color 0.3s;">
+        <i class="fab fa-twitch " style="font-size: 24px; margin-right: 10px;"></i>
+        Compartilhe meu perfil na Twitch e chame amigos!
+    </a>
+</section>
