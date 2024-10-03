@@ -4,9 +4,7 @@
         <div class="col-md-12 text-center  p-4">
             <img src="{{ asset('/profile/perfil.jpg') }}" alt="Guilherme Viana DEV"
                 class="img-fluid rounded-circle profile shadow-lg">
-            <h1 class="text-uppercase display-4 animate__animated animate__fadeInDown">Prepare-se para Brilhar no
-                Warriors of Valhalla!</h1>
-
+                <h1 class="text-white heading-black mt-4 mb-4">Prepare-se para Brilhar no Warriors of Valhalla!</h2>
         </div>
     </div>
     <div class="row text-center">
@@ -84,13 +82,6 @@
     </div>
 
 
-    <div class="row text-center">
-        <a href="https://www.twitch.tv/yourchannel"
-            class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
-            target="_blank" style="max-width: 250px;">
-            <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>
-            <strong>Participe Agora!</strong>
-        </a>
-    </div>
+
 
 </div>

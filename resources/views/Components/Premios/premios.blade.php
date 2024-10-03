@@ -1,7 +1,8 @@
 <div class="container" id="premios">
     <div class="col-md-12 mx-auto text-center ">
-        <h2 class="text-uppercase display-4 animate__animated animate__fadeInDown">Prêmios</h2>
-        <p class="text-mute">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os melhores e lute por prêmios incríveis.</p>
+        <h1 class="text-white heading-black">Prêmios</h2>
+
+        <p class="text-muted">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os melhores e lute por prêmios incríveis.</p>
 
    </div>
 
@@ -11,7 +12,7 @@
         <div class="col-md-4 text-center ">
             <div class="card shadow-lg hover-zoom mb-4 ">
                 <h3 class="card-title text-uppercase mt-4">Card de Participação</h3>
-                <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto" alt="Card de Participação">
+                <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto" alt="Card de Participação"style="width: 260px;">
 
             </div>
         </div>
@@ -20,24 +21,33 @@
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Premiação Via Pix</h3>
                 <img  src="{{ asset('asset/itens/pix.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4" alt="Premiação Pix" style="width: 300px;">
-                <div class="card-body">
-                    <p class="card-text">Lute para ganhar prêmios em dinheiro diretamente na sua conta via Pix!</p>
-                </div>
+
             </div>
         </div>
 
         <div class="col-md-4 text-center">
             <div class="card shadow-lg hover-zoom mb-4">
-                <h3 class="card-title text-uppercase mt-3">Prêmios Secretos Revelados?</h3>
+                <h3 class="card-title text-uppercase mt-3">Prêmio Secreto</h3>
                 <div class="card-body">
                     <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-1" alt="Premiação Pix" style="width: 300px;">
-                    <p class="card-text">Achou que só o primeiro lugar levaria prêmios? Pense de novo... 😏</p>
+
                 </div>
             </div>
         </div>
-
+    </div>
+    <hr>
+    <div class="row text-center">
+        <a href="https://www.twitch.tv/yourchannel"
+            class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
+            target="_blank" style="max-width: 250px;">
+            <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>
+            <strong>Participe Agora!</strong>
+        </a>
     </div>
 </div>
+<br>
+
+
 
 <!-- Estilos e Efeitos -->
 <style>

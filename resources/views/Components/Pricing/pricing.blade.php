@@ -5,7 +5,7 @@
     <!-- Título e Descrição -->
     <div class="row">
         <div class="col-md-12 mx-auto text-center">
-            <h2 class="text-white heading-black">Inscrição no Torneio</h2>
+            <h1 class="text-white heading-black">Inscrição no Torneio</h2>
             <p class="text-light lead">Preço simples - Pagamento em Reais (R$)</p>
             <h4 class="text-warning mt-4">Prepare-se para a ação! 🎮</h4>
             <p class="text-light">🗓️ Data do Torneio: 23 de Novembro às 13h!</p>
