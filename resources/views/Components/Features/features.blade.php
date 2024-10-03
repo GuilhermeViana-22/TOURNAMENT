@@ -1,85 +1,79 @@
-<!-- features section -->
-<section class="pt-6 pb-7" id="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mx-auto text-center">
-                <h1 class="heading-black" >Participe do Torneio Warriors of Valhalla!</h3>
-                <p class="text-muted lead" >Prepare-se para uma competição épica! O Warriors of Valhalla está de volta com um formato emocionante de 2x2. Reúna sua dupla e entre na batalha para conquistar o prêmio de R$100 para o primeiro lugar! O segundo e terceiro colocados também receberão prêmios surpresas. Não fique de fora dessa oportunidade de mostrar suas habilidades e se divertir!</p>
+<div class="container" id="features">
+    <!-- Seção de Introdução -->
+    <div class="row">
+        <div class="col-md-12 text-center  p-4">
+                <img src="{{ asset('/profile/perfil.jpg') }}" alt="Guilherme Viana DEV" class="img-fluid rounded-circle profile shadow-lg">
+                <h1 class="text-uppercase display-4 font-weight-bold animate__animated animate__fadeInDown">Prepare-se para Brilhar no Warriors of Valhalla!</h1>
+
             </div>
         </div>
+    <div class="row text-center">
+        <div class="col-md-12 mx-auto">
+            <p class="text-muted lead mb-4">
+                Este torneio foi criado especialmente para aqueles que compartilham a paixão por Brawlhalla e seguem o <strong class="name">@guilherme_viana_play</strong> em suas redes sociais. Nossa comunidade do Discord se uniu para oferecer uma experiência única de entretenimento e competição amigável, em um ambiente fechado e acolhedor, feito de <em>jogadores para jogadores</em>.
+            </p>
+            <p class="text-muted lead mb-4">
+                Cada detalhe deste evento foi cuidadosamente planejado para garantir transparência e diversão. Queremos que todos os participantes sintam-se respeitados e valorizados, em um torneio que reflete o verdadeiro espírito competitivo e a camaradagem que Brawlhalla proporciona.
+            </p>
+            <p class="text-muted lead mb-4">
+                Não estamos vinculados a grandes empresas – este evento é criado por amigos, para amigos. Esperamos que vocês compartilhem o mesmo respeito e entusiasmo que sentimos ao organizar este campeonato.
+            </p>
 
-        <div class="row mt-5">
-            <div class="col-md-10 mx-auto">
-                <div class="row feature-boxes">
-                    <div class="col-md-6 mb-4 box"> <!-- Adicionado mb-4 para espaçamento inferior -->
-                        <div class="icon-box box-primary text-center">
-                            <div class="icon-box-inner">
-                                <span data-feather="edit-3" width="35" height="35"></span>
-                            </div>
-                        </div>
-                        <h3>Regras do Torneio 2x2</h3>
-                        <p class="text-muted">As equipes devem ser compostas por dois jogadores. Cada partida será disputada em um formato de eliminação direta. A estratégia e a comunicação em equipe serão essenciais para a vitória!</p>
-                    </div>
+        </div>
+    </div>
 
-                    <div class="col-md-6 mb-4 box"> <!-- Adicionado mb-4 para espaçamento inferior -->
-                        <div class="icon-box box-warning text-center">
-                            <div class="icon-box-inner">
-                                <span data-feather="monitor" width="35" height="35"></span>
-                            </div>
-                        </div>
-                        <h3>Partidas Ao Vivo</h3>
-                        <p class="text-muted">Assista às partidas ao vivo na nossa plataforma na Twitch. Venha torcer pela sua equipe favorita e faça parte da ação!</p>
-                    </div>
 
-                    <div class="col-md-6 mb-4 box"> <!-- Adicionado mb-4 para espaçamento inferior -->
-                        <div class="icon-box box-danger text-center">
-                            <div class="icon-box-inner">
-                                <span data-feather="layout" width="35" height="35"></span>
-                            </div>
+    <!-- Seção de Recursos e Regras -->
+    <div class="row mt-5">
+        <div class="col-md-12 mx-auto">
+            <div class="row feature-boxes">
+                <div class="col-md-6 col-sm-12 mb-4 box">
+                    <div class="icon-box box-primary text-center">
+                        <div class="icon-box-inner">
+                            <i class="fas fa-user-friends" style="font-size: 35px;"></i>
                         </div>
-                        <h3>Premiação Incrível</h3>
-                        <p class="text-muted">Além do prêmio de R$100 para o primeiro colocado, o segundo e terceiro lugares receberão prêmios surpresas, tornando essa competição ainda mais emocionante!</p>
                     </div>
-
-                    <div class="col-md-6 mb-4 box"> <!-- Adicionado mb-4 para espaçamento inferior -->
-                        <div class="icon-box box-info text-center">
-                            <div class="icon-box-inner">
-                                <span data-feather="globe" width="35" height="35"></span>
-                            </div>
-                        </div>
-                        <h3>Comunidade Engajada</h3>
-                        <p class="text-muted">Participe de uma comunidade de jogadores apaixonados e experimente o espírito esportivo. Junte-se a nós para criar memórias inesquecíveis!</p>
-                    </div>
+                    <h3>Regras do Torneio 2x2</h3>
+                    <p class="text-muted">As equipes devem ser compostas por dois jogadores. Cada partida será disputada em um formato de eliminação direta. A estratégia e a comunicação em equipe serão essenciais para a vitória!</p>
                 </div>
-            </div>
-        </div>
 
+                <div class="col-md-6 col-sm-12 mb-4 box">
+                    <div class="icon-box box-warning text-center">
+                        <div class="icon-box-inner">
+                            <i class="fas fa-video" style="font-size: 35px;"></i>
+                        </div>
+                    </div>
+                    <h3>Partidas Ao Vivo</h3>
+                    <p class="text-muted">Assista às partidas ao vivo na nossa plataforma na Twitch. Venha torcer pela sua equipe favorita e faça parte da ação!</p>
+                </div>
 
-        <div class="row mt-6">
-            <div class="col-md-6">
-                <h2>Não Perca a Oportunidade de Brilhar!</h2>
-                <p class="mb-5">Warriors of Valhalla está animada para ver você e sua equipe brilhando. Mostre suas habilidades, divirta-se e lute por prêmios fantásticos. Inscreva-se agora e esteja preparado para o desafio!</p>
-                <a href="https://www.twitch.tv/yourchannel" class="btn btn-warning d-flex align-items-center" target="_blank">
-                    <span class="fab fa-twitch" style="font-size: 24px; margin-right: 10px;"></span>
-                    <strong>Inscreva-se Agora!</strong>
-                </a>
-            </div>
-            <div class="col-md-5 offset-md-1">
-                <div class="slick-about">
-                    <div class="card text-center mb-3" onclick="danceCard(this)">
-                        <h3>Card de Participação</h3>
-                        <img src="{{asset('asset/itens/card.png')}}" class="img-fluid rounded d-block mx-auto" alt="Card" />
+                <div class="col-md-6 col-sm-12 mb-4 box">
+                    <div class="icon-box box-danger text-center">
+                        <div class="icon-box-inner">
+                            <i class="fas fa-trophy" style="font-size: 35px;"></i>
+                        </div>
                     </div>
-                    <div class="card text-center mb-3" onclick="danceCard(this)">
-                        <h3>Premiação em Pix</h3>
-                        <img id="pix" src="{{asset('asset/itens/pix.png')}}" class="img-fluid rounded d-block mx-auto mt-4" alt="Skin" style="width:300px" />
+                    <h3>Premiação Incrível</h3>
+                    <p class="text-muted">Além do prêmio de R$100 para o primeiro colocado, o segundo e terceiro lugares receberão prêmios surpresas, tornando essa competição ainda mais emocionante!</p>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb-4 box">
+                    <div class="icon-box box-info text-center">
+                        <div class="icon-box-inner">
+                            <i class="fas fa-comments" style="font-size: 35px;"></i>
+                        </div>
                     </div>
-                    <div class="card text-center mb-3" onclick="danceCard(this)">
-                        <h3>Esquema de cores</h3>
-                        <img id="cor" src="{{asset('asset/itens/cor.png')}}" class="img-fluid rounded d-block mx-auto" alt="teste" style="padding: 20px;" />
-                    </div>
+                    <h3>Comunidade Engajada</h3>
+                    <p class="text-muted">Participe de uma comunidade de jogadores apaixonados e experimente o espírito esportivo. Junte-se a nós para criar memórias inesquecíveis!</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+
+    <p class="lead mb-4 animate__animated animate__fadeInUp text-mute">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os melhores e lute por prêmios incríveis.</p>
+    <a href="https://www.twitch.tv/yourchannel" class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn" target="_blank" style="max-width: 250px;">
+        <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>
+        <strong>Participe Agora!</strong>
+    </a>
+</div>

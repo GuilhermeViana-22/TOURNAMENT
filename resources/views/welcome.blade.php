@@ -19,9 +19,10 @@
     @include('Components.Navbar.navbar')
     @include('Components.Header.hero')
     @include('Components.Features.features')
-    @include('Components.Pricing.pricing')
+    @include('Components.Premios.premios')
     @include('Components.WhatsApp.whats')
     @include('Components.FAQ.faq')
+    @include('Components.Pricing.pricing')
     @include('Components.NEW.news')
     @include('Components.Footer.footer')
 

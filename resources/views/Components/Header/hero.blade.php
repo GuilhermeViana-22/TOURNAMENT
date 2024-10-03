@@ -5,12 +5,9 @@
                 <div class="d-flex justify-content-center  p-4 animate__zoomIn">
                     <img src="{{ asset('/logo/brawl.png') }}" class="img-fluid" style="max-width: 400px;" alt="Brawl Logo"/>
                 </div>
-
-               <button class="btn btn-primary d-inline-flex flex-row align-items-center">
-                    Solicitar consultoria
-                    <em class="ml-2" data-feather="arrow-right"></em>
-                </button>
-
+                <div class="d-flex justify-content-center  p-4 animate__zoomIn">
+                    Warriors of Valhalla
+                </div>
             </div>
         </div>
     </div>

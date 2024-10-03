@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-sm-5 mr-auto">
                     <h5>Junte-se à Batalha no Warriors of Valhalla!</h5>
-                    <p class="text-muted">
+                    <p class="text-gray text-justify">
                         Prepare-se para uma jornada épica no Warriors of Valhalla, onde guerreiros de todas as partes se reúnem para enfrentar desafios emocionantes em um torneio eliminatório 2x2! Este é mais do que apenas um evento; é uma celebração da coragem, da habilidade e da camaradagem entre jogadores.
                     </p>
                     <ul class="list-inline social social-sm">

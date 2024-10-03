@@ -1,49 +1,45 @@
-<!-- Seção de Perguntas Frequentes -->
-<section class="py-7" id="faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto text-center">
-                <h2>Perguntas Frequentes</h2>
-                <p class="text-muted lead">Respostas para as dúvidas mais comuns sobre a Copa Brawlhalla.</p>
-            </div>
+<div class="container p-4">
+        <!-- Imagens dos personagens -->
+        <div class="mt-4 d-flex justify-content-center">
+            <img src="{{ asset('/asset/lendas/nai.png') }}" alt="Brawlhalla - Shang" class="img-fluid m-2" style="max-width: 250px;">
+      </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>Perguntas Frequentes</h2>
+            <h2 class="text-muted text-center">Respostas para as dúvidas mais comuns sobre a Copa Brawlhalla.</h2>
+            <h4 class="text-muted text-center">Fornecida por Guilherme_viana_play.</h4>
         </div>
-        <div class="row mt-5">
-            <div class="col-md-10 mx-auto">
-                <div class="row">
-                    <div class="col-md-6 mb-5">
-                        <h6>Qual é o formato do torneio?</h6>
-                        <p class="text-muted">O torneio será no formato **2x2**, onde cada equipe será composta por dois jogadores. As partidas seguem um formato de eliminação direta, e a comunicação entre os membros da equipe será fundamental para a vitória!</p>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h6>Como funciona a premiação?</h6>
-                        <p class="text-muted">O primeiro lugar ganhará R$ 100,00 via PIX. O segundo e o terceiro lugares receberão prêmios surpresa que serão revelados ao final do torneio. Prepare-se para recompensas incríveis!</p>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h6>Quem pode participar do torneio?</h6>
-                        <p class="text-muted">O torneio é aberto a todos os jogadores, independentemente do nível de habilidade. Todos são bem-vindos a se inscrever e competir, desde que sigam as regras do torneio e se registrem a tempo.</p>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h6>Como faço para me inscrever?</h6>
-                        <p class="text-muted">As inscrições podem ser feitas preenchendo um **formulário de cadastro**. Nele, você e seu parceiro de equipe devem fornecer o nome completo, nickname e o nome da equipe. Após isso, sua inscrição estará confirmada!</p>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h6>Há uma taxa de inscrição?</h6>
-                        <p class="text-muted">Sim, há uma pequena taxa de inscrição para participar do torneio. Ela será usada para a organização e manutenção do evento, garantindo uma experiência de alta qualidade para todos os participantes.</p>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h6>Posso assistir às partidas ao vivo?</h6>
-                        <p class="text-muted">Sim! Todas as partidas serão transmitidas ao vivo no canal oficial da Twitch. Venha assistir, torcer pela sua equipe favorita e fazer parte dessa comunidade incrível!</p>
-                    </div>
+    </div>
+    <hr>
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Qual é o formato do torneio?</h4>
+                    <p class="text-muted">O torneio será no formato **2x2**, onde cada equipe será composta por dois jogadores. As partidas seguem um formato de eliminação direta, e a comunicação entre os membros da equipe será fundamental para a vitória!</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Como funciona a premiação?</h4>
+                    <p class="text-muted">O primeiro lugar ganhará R$ 100,00 via PIX. O segundo e o terceiro lugares receberão prêmios surpresa que serão revelados ao final do torneio. Prepare-se para recompensas incríveis!</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Quem pode participar do torneio?</h4>
+                    <p class="text-muted">O torneio é aberto a todos os jogadores, independentemente do nível de habilidade. Todos são bem-vindos a se inscrever e competir, desde que sigam as regras do torneio e se registrem a tempo.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Como faço para me inscrever?</h4>
+                    <p class="text-muted">As inscrições podem ser feitas preenchendo um **formulário de cadastro**. Nele, você e seu parceiro de equipe devem fornecer o nome completo, nickname e o nome da equipe. Após isso, sua inscrição estará confirmada!</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Há uma taxa de inscrição?</h4>
+                    <p class="text-muted">Sim, há uma pequena taxa de inscrição para participar do torneio. Ela será usada para a organização e manutenção do evento, garantindo uma experiência de alta qualidade para todos os participantes.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-5">
+                    <h4>Posso assistir às partidas ao vivo?</h4>
+                    <p class="text-muted">Sim! Todas as partidas serão transmitidas ao vivo no canal oficial da Twitch. Venha assistir, torcer pela sua equipe favorita e fazer parte dessa comunidade incrível!</p>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-6 mx-auto text-center">
-                <h5 class="mb-4">Tem mais dúvidas?</h5>
-                <a href="#" class="btn btn-primary">Entre em contato</a>
-            </div>
-        </div>
     </div>
-
-</section>
-
+    <hr>
+</div>
