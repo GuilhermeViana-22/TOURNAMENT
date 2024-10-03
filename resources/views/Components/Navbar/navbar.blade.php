@@ -18,7 +18,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll text-warning" href="https://www.twitch.tv/yourchannel" target="_blank">Assista na Twitch!</a>
+                        <a class="nav-link page-scroll text-warning" href="https://www.twitch.tv/guilherme_viana_play" target="_blank">Assista na Twitch!</a>
                     </li>
                 </ul>
             </div>
