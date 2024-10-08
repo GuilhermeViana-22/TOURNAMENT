@@ -1,3 +1,28 @@
+<style>
+    /* Estilos personalizados (opcional) */
+    #shareButton {
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #shareButton i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    /* Ajuste para garantir que o botão não exceda a largura em telas pequenas */
+    @media (max-width: 576px) {
+      #shareButton {
+        width: 100%;
+      }
+    }
+  </style>
 <div class="container" id="faq">
         <!-- Imagens dos personagens -->
         <div class="mt-4 d-flex justify-content-center">
@@ -44,17 +69,16 @@
     <hr>
 </div>
 
-<section style="text-align: center; margin: 20px;">
-    <p class="text-muted">Sua ajuda pode me levar ainda mais longe!</p>
+<section class="d-flex flex-column align-items-center justify-content-center text-center py-5">
+    <p class="text-muted mb-4">Sua ajuda pode me levar ainda mais longe!</p>
     <button
-        id="shareButton"
-        class="btn btn-danger"
-        style="display: inline-block; color: white; padding: 15px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s; max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
+      id="shareButton"
+      class="btn btn-danger d-flex align-items-center justify-content-center"
     >
-        <i class="fab fa-twitch" style="font-size: 24px; margin-right: 10px;"></i>
-        Compartilhe
+      <i class="fab fa-twitch"></i>
+      Compartilhe
     </button>
-</section>
+  </section>
 <script>
     document.getElementById('shareButton').addEventListener('click', function() {
         // Copiar link para a área de transferência
