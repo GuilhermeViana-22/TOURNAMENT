@@ -6,7 +6,10 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
+                'resources/css/auth.css',
+                'resources/css/bracket.scss',
                 'resources/js/app.js',
+                'resources/js/brackets.js',
             ],
             refresh: true,
         }),

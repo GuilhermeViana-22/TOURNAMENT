@@ -13,7 +13,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite([
+      'resources/css/app.css',
+                'resources/css/auth.css',
+                'resources/css/bracket.scss',
+                'resources/js/app.js',
+                'resources/js/brackets.js',
+    ])
 </head>
 <body class="font-sans antialiased bg-gray-900 text-white">
     <div class="min-h-screen bg-gray-900 text-white">
