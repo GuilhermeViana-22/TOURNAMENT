@@ -2,9 +2,10 @@
     <div class="col-md-12 mx-auto text-center ">
         <h1 class="text-white heading-black">Prêmios</h2>
 
-        <p class="text-muted">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os melhores e lute por prêmios incríveis.</p>
+            <p class="text-muted">Sua equipe está pronta para ser a próxima campeã? A hora chegou! Divirta-se, desafie os
+                melhores e lute por prêmios incríveis.</p>
 
-   </div>
+    </div>
 
 
     <!-- Seção de Cards e Prêmios -->
@@ -12,7 +13,8 @@
         <div class="col-md-4 text-center ">
             <div class="card shadow-lg hover-zoom mb-4 ">
                 <h3 class="card-title text-uppercase mt-4">Card de Participação</h3>
-                <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto" alt="Card de Participação"style="width: 260px;">
+                <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto"
+                    alt="Card de Participação"style="width: 260px;">
 
             </div>
         </div>
@@ -20,7 +22,8 @@
         <div class="col-md-4 text-center">
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Premiação Via Pix</h3>
-                <img  src="{{ asset('asset/itens/pix.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4" alt="Premiação Pix" style="width: 300px;">
+                <img src="{{ asset('asset/itens/pix.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4"
+                    alt="Premiação Pix" style="width: 300px;">
 
             </div>
         </div>
@@ -29,7 +32,8 @@
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Prêmio Secreto</h3>
                 <div class="card-body">
-                    <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-1" alt="Premiação Pix" style="width: 300px;">
+                    <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-1"
+                        alt="Premiação Pix" style="width: 300px;">
 
                 </div>
             </div>
@@ -37,9 +41,9 @@
     </div>
     <hr>
     <div class="row text-center">
-        <a href="https://www.twitch.tv/yourchannel"
+        <a href="{{ route('login') }}"
             class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
-            target="_blank" style="max-width: 250px;">
+            style="max-width: 250px;">
             <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>
             <strong>Participe Agora!</strong>
         </a>

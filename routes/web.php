@@ -34,6 +34,10 @@ Route::middleware('auth')->group(function () {
     // Rotas para o Campeonato e Minha Inscrição
     Route::get('/campeonato', [TeamController::class, 'index'])->name('campeonato');
     Route::get('/inscricao', [TeamController::class, 'inscricao'])->name('inscricao');
+    Route::get('/cadastrar', [TeamController::class, 'cadastrar'])->name('cadastrar');
 
 });
+
+
+
 require __DIR__.'/auth.php';
