@@ -11,11 +11,14 @@ class Team extends Model
 
     protected $fillable = [
         'user_id',
-        'nickname1',
-        'nickname2',
-        'team_name',
-        'image_path',
+        'nickname_user',    
+        'nickname_team',   
+        'duo_name',    
+        'contact_phone', 
+        'discord',       
     ];
+
+
 
     public function user()
     {

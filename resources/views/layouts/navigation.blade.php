@@ -15,10 +15,23 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="text-white">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-
-                    <x-nav-link :href="route('inscricao')" :active="request()->routeIs('inscricao')" class="text-white">
-                        {{ __('Minha inscrição') }}
+                
+                    @php
+                        // Obtém o ID do usuário autenticado
+                        $userId = auth()->id();
+                
+                        // Verifica se o usuário já está na model Team
+                        $isUserInTeam = \App\Models\Team::where('user_id', $userId)->exists();
+                    @endphp
+                
+                    <x-nav-link :href="route($isUserInTeam ? 'visualizar' : 'inscricao')" :active="request()->routeIs($isUserInTeam ? 'visualizar' : 'inscricao')" class="text-white">
+                        {{ $isUserInTeam ? __('Visualizar') : __('Minha inscrição') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('bracket')" :active="request()->routeIs('bracket')" class="text-white">
+                        {{ __('Brackets') }}
+                    </x-nav-link>
+
                 </div>
             </div>
 

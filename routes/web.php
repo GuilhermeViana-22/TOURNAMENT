@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\BracketsController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -34,7 +35,9 @@ Route::middleware('auth')->group(function () {
     // Rotas para o Campeonato e Minha Inscrição
     Route::get('/campeonato', [TeamController::class, 'index'])->name('campeonato');
     Route::get('/inscricao', [TeamController::class, 'inscricao'])->name('inscricao');
-    Route::get('/cadastrar', [TeamController::class, 'cadastrar'])->name('cadastrar');
+    Route::post('/cadastrar', [TeamController::class, 'cadastrar'])->name('cadastrar');
+    Route::get('/visualizar', [TeamController::class, 'visualizar'])->name('visualizar');
+    Route::get('/bracket', [BracketsController::class, 'bracket'])->name('bracket');
 
 });
 

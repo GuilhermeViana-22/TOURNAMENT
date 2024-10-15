@@ -41,7 +41,7 @@
     </div>
     <hr>
     <div class="row text-center">
-        <a href="{{ route('login') }}"
+        <a href="{{ route('register') }}"
             class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
             style="max-width: 250px;">
             <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>

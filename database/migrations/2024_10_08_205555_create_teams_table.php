@@ -7,26 +7,31 @@ use Illuminate\Database\Migrations\Migration;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Executa a migração.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('teams', function (Blueprint $table) {
-                $table->id();
-                $table->foreignId('user_id');
-                $table->string('nickname1');
-                $table->string('nickname2');
-                $table->string('team_name');
-                $table->string('image_path')->nullable();
-                $table->timestamps();
-                $table->softDeletes();
-            });
+            $table->id();
+            $table->foreignId('user_id')->constrained(); // Relaciona com a tabela 'users'
+            $table->string('nickname_user', 255); // Altere o nome do campo para 'nickname_user'
+            $table->string('nickname_team', 255); // Altere o nome do campo para 'nickname_team'
+            $table->string('duo_name', 255); // Altere o nome do campo para 'duo_name'    
+            $table->string('contact_phone', 20); // Pode ser salvo como string se incluir caracteres como '+', '-', etc.
+            $table->string('discord', 255);
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
-     * Reverse the migrations.
+     * Reverte a migração.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('teams');
     }
