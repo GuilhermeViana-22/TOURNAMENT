@@ -21,7 +21,7 @@
                 'resources/js/brackets.js',
     ])
 </head>
-<body class="font-sans antialiased bg-gray-900 text-white">
+<body class="font-sans text-dark-100 antialiased">
     <div class="min-h-screen bg-gray-900 text-white">
         @include('layouts.navigation')
 

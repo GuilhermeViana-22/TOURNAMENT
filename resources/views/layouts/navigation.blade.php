@@ -1,13 +1,11 @@
 <nav x-data="{ open: false }" class="bg-gray-800 dark:bg-gray-800 border-b border-gray-700">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-2">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <i class="fas fa-shield-alt text-white"></i>
-                    </a>
+                <div class="flex">
+                    <img src="{{ asset('logo/shodwe.png') }}">
                 </div>
 
                 <!-- Navigation Links -->
@@ -51,9 +49,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-dropdown-link :href="route('profile.edit')" class="text-gray-200">
-                            {{ __('Profile') }}
-                        </x-dropdown-link>
+               
 
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
@@ -97,9 +93,7 @@
             </div>
 
             <div class="mt-3 space-y-1">
-                <x-responsive-nav-link :href="route('profile.edit')" class="text-white">
-                    {{ __('Profile') }}
-                </x-responsive-nav-link>
+      
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">

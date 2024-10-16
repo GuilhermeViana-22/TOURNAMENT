@@ -20,10 +20,10 @@
                 'resources/js/brackets.js',
         ])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
+    <body class="font-sans text-dark-100 antialiased">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background-color: #2d2d2d">
             <div>
-              <img src="{{asset('asset/lendas/shang.png')}}" style="max-width: 300px">
+                <img src="{{asset('logo/shodwe.png')}}" style="max-width: 300px">
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">

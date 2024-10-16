@@ -1,34 +1,46 @@
 <x-app-layout>
-    <div class="max-w-4xl mx-auto bg-dark-300 text-white border border-green-600 rounded-lg shadow-md overflow-hidden mb-6">
-        <div class="p-4">
-            <h2 class="text-2xl font-bold mb-2">Time: {{ $team->nickname_team }}</h2>
-            <p class="text-sm mb-4">Dupla: <span class="font-semibold">{{ $team->duo_name }}</span></p>
-            <table class="min-w-full border-collapse">
-                <thead>
-                    <tr class="bg-gray-800">
-                        <th class="px-4 py-2">Jogador 1</th>
-                        <th class="px-4 py-2">Jogador 2</th>
-                        <th class="px-4 py-2">Vitórias</th>
-                        <th class="px-4 py-2">Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="hover:bg-gray-700 transition duration-200">
-                        <td class="px-4 py-2 border-b border-gray-600">{{ $team->nickname_user }}</td>
-                        <td class="px-4 py-2 border-b border-gray-600">{{ $team->duo_name }}</td>
-                        <td class="px-4 py-2 border-b border-gray-600">2</td>
-                        <td class="px-4 py-2 border-b border-gray-600 flex space-x-2">
-                            <button @click="editPlayer({{ $team->nickname_user }})" class="text-gray-400 hover:text-gray-300">
-                                <i class="fas fa-pencil-alt"></i>
-                            </button>
-                            <button @click="deletePlayer({{ $team->duo_name }})" class="text-gray-400 hover:text-red-500">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                        </td>
-                    </tr>
-                    <!-- Adicione mais jogadores aqui conforme necessário -->
-                </tbody>
-            </table>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <!-- Div para Inscrição no Torneio -->
+            <div class="bg-gray-800 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg mb-6">
+                <div class="p-6 text-gray-100 dark:text-gray-100 text-justify">
+                    <h1 class="text-2xl font-bold mb-4">🏆 Seu registro</h1>
+                    <hr class="border-gray-600">
+                    <br>
+                    <div class="border border-purple-700 rounded-lg p-4"> 
+                        <h2 class="text-2xl font-bold mb-2">Time: {{ $team->nickname_team }}</h2>
+                        <p class="text-sm mb-4">Dupla: <span class="font-semibold">{{ $team->duo_name }}</span></p>
+                        <table class="min-w-full border-collapse border border-purple-600">
+                            <thead>
+                                <tr class="bg-purple-600 text-black border border-black">
+                                    <th class="px-4 py-2 border border-purple-600">Jogador 1</th>
+                                    <th class="px-4 py-2 border border-purple-600">Jogador 2</th>
+                                    <th class="px-4 py-2 border border-purple-600">Vitórias</th>
+                                    <th class="px-4 py-2 border border-purple-600">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white-600 text-white border border-black"> <!-- Linha do Jogador 1 -->
+                                    <td class="px-4 py-2 border-b border-purple-600">{{ $team->nickname_user }}</td>
+                                    <td class="px-4 py-2 border-b border-purple-600">{{ $team->duo_name }}</td>
+                                    <td class="px-4 py-2 border-b border-purple-600">2</td>
+                                    <td class="px-4 py-2 border-b border-purple-600 flex space-x-2">
+                                        <button @click="editPlayer({{ $team->nickname_user }})"
+                                            class="text-gray-400 hover:text-gray-300">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                        <button @click="deletePlayer({{ $team->duo_name }})"
+                                            class="text-gray-400 hover:text-red-500">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- Adicione mais jogadores aqui conforme necessário -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </x-app-layout>
