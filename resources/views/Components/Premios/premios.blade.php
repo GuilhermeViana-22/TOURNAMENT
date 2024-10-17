@@ -1,4 +1,4 @@
-<div class="container" id="premios">
+<div class="container" id="premios"  data-anime="right">
     <div class="col-md-12 mx-auto text-center ">
         <h1 class="text-white heading-black">Prêmios</h2>
 
@@ -9,7 +9,7 @@
 
 
     <!-- Seção de Cards e Prêmios -->
-    <div class="row mt-5">
+    <div class="row mt-5"  data-anime="right">
         <div class="col-md-4 text-center ">
             <div class="card shadow-lg hover-zoom mb-4 ">
                 <h3 class="card-title text-uppercase mt-4">Card de Participação</h3>
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center"  data-anime="right">
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Premiação Via Pix</h3>
                 <img src="{{ asset('asset/itens/pix.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4"
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center"  data-anime="right">
             <div class="card shadow-lg hover-zoom mb-4">
                 <h3 class="card-title text-uppercase mt-3">Prêmio Secreto</h3>
                 <div class="card-body">
@@ -40,7 +40,7 @@
         </div>
     </div>
     <hr>
-    <div class="row text-center">
+    <div class="row text-center"  data-anime="right">
         <a href="{{ route('register') }}"
             class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
             style="max-width: 250px;">
