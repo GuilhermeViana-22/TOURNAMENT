@@ -75,15 +75,15 @@ class TeamController extends Controller
 
     public function deletar(Request $request)
     {
-        $team = Team::where('user_id', $request->get('id'))->first();
-
-        if ($team) {
-            $team->delete();
-            // Redireciona para a dashboard após deletar
-            return redirect()->route('dashboard')->with('success', 'Time deletado com sucesso.');
+        // Deleta todos os registros onde o user_id corresponde ao valor passado
+        $deleted = Team::where('user_id', $request->get('id'))->delete();
+    
+        if ($deleted) {
+            // Redireciona para a dashboard após deletar com sucesso
+            return redirect()->route('dashboard')->with('success', 'Todos os times deletados com sucesso.');
         }
-
-        // Redireciona de volta com mensagem de erro caso o time não seja encontrado
-        return redirect()->route('dashboard')->with('error', 'Time não encontrado.');
+    
+        // Redireciona de volta com mensagem de erro caso nenhum time seja encontrado
+        return redirect()->route('dashboard')->with('error', 'Nenhum time encontrado para deletar.');
     }
 }

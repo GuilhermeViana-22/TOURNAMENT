@@ -14,10 +14,13 @@ export default defineConfig({
                 'resources/js/main.js',
                 'resources/js/toast.js',
                 'resources/js/sweetalert2.js',
-
-
             ],
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+            '$': 'jquery',  // Define jQuery como alias para o símbolo $ globalmente
+        },
+    },
 });

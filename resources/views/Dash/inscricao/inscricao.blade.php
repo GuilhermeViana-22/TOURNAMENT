@@ -1,6 +1,7 @@
 <x-app-layout>
     <div class="flex justify-end mt-6">
-        <a href="{{ route('dashboard') }}" class="bg-orange-300 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+        <a href="{{ route('dashboard') }}"
+            class="bg-orange-300 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded-md transition duration-300">
             Voltar
         </a>
     </div>
@@ -30,7 +31,8 @@
         </div>
 
         <!-- Formulário para preencher os nicknames -->
-        <form action="{{ route('cadastrar') }}" method="POST" enctype="multipart/form-data" id="salvar_cadastrar">
+        <form action="{{ route('cadastrar') }}" method="POST" enctype="multipart/form-data" id="salvar_cadastrar" data-route="{{ route('cadastrar') }}">
+
             @csrf
 
             <input type="hidden" name="user_id" id="user_id" required value="{{ auth()->id() }}">
@@ -89,13 +91,14 @@
                 <img src="{{ asset('asset/itens/qrcode.png') }}" alt="QR Code" class="mx-auto mt-2" />
             </div>
 
-            <button type="submit"
+            <button type="button"
                 class="mt-6 w-full bg-blue-500 text-white px-4 py-2 rounded-md 
-                           hover:bg-blue-600 transition duration-300"  onclick="formAjax('#cadastrar')"> 
+                   hover:bg-blue-600 transition duration-300"
+                onclick="formAjax(event, '#salvar_cadastrar')">
                 Enviar
             </button>
 
-            
+
         </form>
 
         <!-- Seção de Pagamento via PIX -->
@@ -114,4 +117,44 @@
             </div>
         </div>
     </div>
+<script>
+    
+function formAjax(event, formSelector) {
+    event.preventDefault(); // Prevenir redirecionamento
+
+    // Obter o formulário usando o seletor
+    const form = document.querySelector(formSelector);
+
+    // Obter a rota a partir do atributo data-route do formulário
+    const route = form.dataset.route; // Certifique-se de que o formulário tem o atributo data-route
+
+    $.ajax({
+        url: route, // Utilize a rota do formulário
+        method: 'POST',
+        data: $(form).serialize(), // Dados do formulário
+        success: function(response) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Sucesso!',
+                text: response.message,
+            }).then(() => {
+                // Redirecionar após fechar o modal de sucesso
+                window.location.href = response
+                .redirect; // Redireciona para a rota de dashboard
+            });
+        },
+        error: function(xhr) {
+            let errorMessage = 'Ocorreu um erro ao salvar.';
+            if (xhr.responseJSON && xhr.responseJSON.message) {
+                errorMessage = xhr.responseJSON.message; // Mensagem de erro do backend
+            }
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro!',
+                text: errorMessage,
+            });
+        }
+    });
+}
+</script>
 </x-app-layout>

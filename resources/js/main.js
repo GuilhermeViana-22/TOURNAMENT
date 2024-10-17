@@ -1,3 +1,4 @@
+
 let modalWrap = null;
 
 //animação dos itens
@@ -181,15 +182,14 @@ function confirmarFormAjax(form, texto)
         }
     });
 }
-
-function formAjax(event) {
+function formAjax(event, formSelector) {
     event.preventDefault(); // Prevenir redirecionamento
 
-    // Obter o formulário que disparou o evento
-    const form = event.target;
+    // Obter o formulário usando o seletor
+    const form = document.querySelector(formSelector);
 
     // Obter a rota a partir do atributo data-route do formulário
-    const route = $(form).data('route'); // Você deve adicionar data-route no seu formulário
+    const route = form.dataset.route; // Certifique-se de que o formulário tem o atributo data-route
 
     $.ajax({
         url: route, // Utilize a rota do formulário
@@ -202,7 +202,8 @@ function formAjax(event) {
                 text: response.message,
             }).then(() => {
                 // Redirecionar após fechar o modal de sucesso
-                window.location.href = response.redirect; // Redireciona para a rota de dashboard
+                window.location.href = response
+                .redirect; // Redireciona para a rota de dashboard
             });
         },
         error: function(xhr) {
