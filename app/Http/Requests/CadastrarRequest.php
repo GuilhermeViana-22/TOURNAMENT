@@ -19,6 +19,7 @@ class CadastrarRequest extends FormRequest
             'duo_name' => 'required|string|max:255',
             'contact_phone' => 'required|numeric',
             'discord' => 'required|string|max:255',
+            'team_photo' => 'nullable'
         ];
     }
 

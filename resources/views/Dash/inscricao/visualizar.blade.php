@@ -29,10 +29,13 @@
                                             class="text-gray-400 hover:text-gray-300">
                                             <i class="fas fa-pencil-alt"></i>
                                         </button>
-                                        <button @click="deletePlayer({{ $team->duo_name }})"
-                                            class="text-gray-400 hover:text-red-500">
-                                            <i class="fas fa-trash"></i>
-                                        </button>
+                                        <form @submit.prevent="deletePlayer('{{ $team->user_id }}')" method="POST" action="{{ route('deletar') }}">
+                                            @csrf
+                                            <input type="hidden" name="id" value="{{ $team->user_id }}">
+                                            <button type="submit" class="text-gray-400 hover:text-red-500">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                                 <!-- Adicione mais jogadores aqui conforme necessário -->

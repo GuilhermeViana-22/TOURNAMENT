@@ -5,6 +5,8 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\BracketsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PaymentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,8 +39,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/inscricao', [TeamController::class, 'inscricao'])->name('inscricao');
     Route::post('/cadastrar', [TeamController::class, 'cadastrar'])->name('cadastrar');
     Route::get('/visualizar', [TeamController::class, 'visualizar'])->name('visualizar');
+    Route::post('/deletar', [TeamController::class, 'deletar'])->name('deletar');
     Route::get('/bracket', [BracketsController::class, 'bracket'])->name('bracket');
 
+
+    Route::post('/pay', [PaymentController::class, 'processPayment'])->name('pay');
 });
 
 
