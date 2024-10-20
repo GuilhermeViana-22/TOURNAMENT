@@ -14,17 +14,14 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css',
-     'resources/css/auth.css',
- 
-      'resources/css/bracket.scss', 
-      'resources/js/app.js', 
-   
-      'resources/js/bracket.js', 
-      'resources/js/custom.js', 
-      'resources/js/main.js', 
-      'resources/js/toast.js',    
-      'resources/js/sweetalert2.js',])
+    @vite([
+             'resources/css/app.css',
+                'resources/css/auth.css',
+                'resources/css/bracket.scss',
+                'resources/js/app.js',
+                'resources/js/main.js',
+                'resources/js/sweetalert2.js',
+    ])
 </head>
 
 <body class="font-sans text-dark-100 antialiased">
@@ -35,7 +32,7 @@
         </div>
 
         <div
-            class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
+            class="w-full  sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
             {{ $slot }}
         </div>
     </div>
