@@ -1,4 +1,4 @@
-<div class="container" id="premios">
+<div class="container" id="premios"   data-anime="right">
     <div class="col-md-12 mx-auto text-center ">
         <h1 class="text-white heading-black">Prêmios</h2>
 
@@ -11,7 +11,7 @@
     <!-- Seção de Cards e Prêmios -->
     <div class="row mt-5">
         <div class="col-md-4 text-center ">
-            <div class="card shadow-lg hover-zoom mb-4 ">
+            <div class="card shadow-lg hover-zoom mb-4   anime" data-anime="right" >
                 <h3 class="card-title text-uppercase mt-4">Card de Participação</h3>
                 <img src="{{ asset('asset/itens/card.png') }}" class="card-img-top img-fluid rounded mx-auto"
                     alt="Card de Participação"style="width: 260px;">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-4 text-center">
-            <div class="card shadow-lg hover-zoom mb-4">
+            <div class="card shadow-lg hover-zoom mb-4  anime" data-anime="right">
                 <h3 class="card-title text-uppercase mt-3">Premiação Via Pix</h3>
                 <img src="{{ asset('asset/itens/pix.png') }}" class="card-img-top img-fluid rounded mx-auto mt-4"
                     alt="Premiação Pix" style="width: 300px;">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="col-md-4 text-center">
-            <div class="card shadow-lg hover-zoom mb-4">
+            <div class="card shadow-lg hover-zoom mb-4  anime" data-anime="right">
                 <h3 class="card-title text-uppercase mt-3">Prêmio Secreto</h3>
                 <div class="card-body">
                     <img src="{{ asset('asset/itens/box.png') }}" class="card-img-top img-fluid rounded mx-auto mt-1"
@@ -40,14 +40,7 @@
         </div>
     </div>
     <hr>
-    <div class="row text-center">
-        <a href="{{ route('register') }}"
-            class="btn btn-lg btn-warning btn-hover-glow d-flex align-items-center justify-content-center mx-auto animate__animated animate__zoomIn"
-            style="max-width: 250px;">
-            <i class="fab fa-twitch" style="font-size: 28px; margin-right: 12px;"></i>
-            <strong>Participe Agora!</strong>
-        </a>
-    </div>
+
 </div>
 <br>
 
@@ -56,7 +49,7 @@
 <!-- Estilos e Efeitos -->
 <style>
     .btn-hover-glow:hover {
-        box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+        box-shadow: 0 0 15px rgba(217, 98, 253, 0.6);
         transition: box-shadow 0.3s ease-in-out;
     }
 

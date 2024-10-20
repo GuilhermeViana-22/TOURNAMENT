@@ -1,11 +1,11 @@
-<nav x-data="{ open: false }" class="bg-gray-800 dark:bg-gray-800 border-b border-gray-700">
+<nav x-data="{ open: false }" class="bg-purple-800 dark:bg-gray-800 border-b border-gray-700">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-2">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex">
-                    <img src="{{ asset('logo/shodwe.png') }}">
+                    <img src="{{ asset('logo/shodwe_sem_fundo.png') }}">
                 </div>
 
                 <!-- Navigation Links -->
@@ -19,18 +19,22 @@
                         $userId = auth()->id();
                 
                         // Verifica se o usuário já está na model Team
-                        $isUserInTeam = \App\Models\Team::where('user_id', $userId)->exists();
+                        $isUserInTeam = \App\Models\Inscricao::where('user_id', $userId)->exists();
                     @endphp
                 
                     <x-nav-link :href="route($isUserInTeam ? 'visualizar' : 'inscricao')" :active="request()->routeIs($isUserInTeam ? 'visualizar' : 'inscricao')" class="text-white">
-                        {{ $isUserInTeam ? __('Visualizar') : __('Minha inscrição') }}
+                        {{ $isUserInTeam ? __('Visualizar inscrição') : __('Minha inscrição') }}
                     </x-nav-link>
-
+                
+                    <x-nav-link :href="route('equipe')" :active="request()->routeIs('equipe')" class="text-white">
+                        {{ __('Equipe') }}
+                    </x-nav-link>
+                
                     <x-nav-link :href="route('bracket')" :active="request()->routeIs('bracket')" class="text-white">
                         {{ __('Brackets') }}
                     </x-nav-link>
-
                 </div>
+                
             </div>
 
             <!-- Settings Dropdown -->
@@ -109,3 +113,21 @@
         </div>
     </div>
 </nav>
+<script>
+    function toggleDropdown() {
+        const dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('hidden');
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.inline-flex')) {
+            const dropdowns = document.getElementsByClassName("absolute");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (!openDropdown.classList.contains('hidden')) {
+                    openDropdown.classList.add('hidden');
+                }
+            }
+        }
+    }
+</script>

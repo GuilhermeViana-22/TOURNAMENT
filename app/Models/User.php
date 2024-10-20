@@ -43,8 +43,4 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function team()
-{
-    return $this->hasOne(Team::class);
-}
 }

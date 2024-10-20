@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" href="{{  asset('logo/shodwe_sem_fundo.png')  }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
     <title>Torneio Warrios of Valhalla</title>
 
@@ -13,14 +14,24 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/css/auth.css', 'resources/css/bracket.scss', 'resources/js/app.js', 'resources/js/bracket.js', 'resources/js/custom.js', 'resources/js/main.js', 'resources/js/toast.js',    'resources/js/sweetalert2.js',])
+    @vite(['resources/css/app.css',
+     'resources/css/auth.css',
+ 
+      'resources/css/bracket.scss', 
+      'resources/js/app.js', 
+   
+      'resources/js/bracket.js', 
+      'resources/js/custom.js', 
+      'resources/js/main.js', 
+      'resources/js/toast.js',    
+      'resources/js/sweetalert2.js',])
 </head>
 
 <body class="font-sans text-dark-100 antialiased">
     <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0"
-        style="background-color: #2d2d2d">
+    style="background-image: url('{{ asset('hero/background.png') }}'); background-size: cover; background-position: center; background-color: #2d2d2d;">
         <div>
-            <img src="{{ asset('logo/shodwe.png') }}" style="max-width: 300px">
+            <img src="{{ asset('logo/shodwe_sem_fundo.png') }}" style="max-width: 300px">
         </div>
 
         <div

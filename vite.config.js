@@ -7,8 +7,10 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/css/auth.css',
+            
                 'resources/css/bracket.scss',
                 'resources/js/app.js',
+           
                 'resources/js/bracket.js',
                 'resources/js/custom.js',
                 'resources/js/main.js',

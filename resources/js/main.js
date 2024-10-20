@@ -24,9 +24,6 @@ window.addEventListener('scroll', function(){
     animeScroll();
 });
 
-date = new Date();
-year = date.getFullYear();
-document.getElementById("ano").innerHTML = year;
 
 /**
  * Função para criar uma string aleatória
