@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('leader_id')->constrained('users'); // ID do líder da equipe (usuário que criou)
+            $table->foreignId('user_id')->constrained('users'); // ID do líder da equipe (usuário que criou)
             $table->foreignId('member_id')->nullable()->constrained('users'); // ID do segundo membro
             $table->timestamps();
         });

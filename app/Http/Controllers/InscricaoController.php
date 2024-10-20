@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inscricao;
+use App\Models\Team;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
@@ -96,8 +97,11 @@ class InscricaoController extends Controller
             return redirect()->route('inscricao')->with('error', 'Você não tem uma equipe cadastrada.');
         }
 
+
+        $team = Team::where('user_id', $user->id)->first();
+
         // Retorna a view com o usuário autenticado e a equipe
-        return view('dash.inscricao.visualizar', compact('user', 'Register'));
+        return view('dash.inscricao.visualizar', compact('user', 'Register', 'team'));
     }
 
     public function deletar(Request $request)

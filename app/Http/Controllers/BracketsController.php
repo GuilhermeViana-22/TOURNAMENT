@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Team;
 
 class BracketsController extends Controller
 {
-    public function bracket(){
+    public function index()
+    {
+        $teams = Team::with(['leader', 'member'])->get(); // Carrega líderes e membros
+        return view('Dash.Brackets.index', compact('teams'));
+    }
 
-        return view('dash.Brackets.index');
+    public function espera()
+    {
+     
+        return view('Dash.Brackets.espera');
     }
 }

@@ -47,7 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/atualizar', [InscricaoController::class, 'atualizar'])->name('atualizar');
     Route::get('/visualizar', [InscricaoController::class, 'visualizar'])->name('visualizar');
     Route::post('/deletar', [InscricaoController::class, 'deletar'])->name('deletar');
-    Route::get('/bracket', [BracketsController::class, 'bracket'])->name('bracket');
+    Route::get('/bracket', [BracketsController::class, 'index'])->name('bracket');
+    Route::get('/espera', [BracketsController::class, 'espera'])->name('espera');
 });
 
 

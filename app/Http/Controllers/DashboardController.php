@@ -21,7 +21,7 @@ class DashboardController extends Controller
         ->whereNotIn('id', function($query) {
             $query->select('member_id')
                 ->from('teams')
-                ->where('leader_id', auth()->user()->id);
+                ->where('user_id', auth()->user()->id);
         })
         ->get();
         return view('dash.Equipe.index', compact('users'));
@@ -36,7 +36,7 @@ class DashboardController extends Controller
         ]);
     
         // Verifica se o membro já está na mesma equipe
-        $team = Team::where('leader_id', auth()->user()->id)
+        $team = Team::where('user_id', auth()->user()->id)
             ->where('member_id', $request->input('member_id'))
             ->first();
     
@@ -47,11 +47,12 @@ class DashboardController extends Controller
         // Criação da equipe
         Team::create([
             'name' => $request->input('name'),
-            'leader_id' => auth()->user()->id, // O usuário logado é o líder
+            'user_id' => auth()->user()->id, // O usuário logado é o líder
             'member_id' => $request->input('member_id'), // O segundo jogador
         ]);
     
         return redirect()->back()->with('success', 'Equipe criada com sucesso!');
     }
+
 
 }

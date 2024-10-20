@@ -43,4 +43,13 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function hasTeam()
+    {
+        return $this->team()->exists(); // Supondo que haja uma relação 'team' configurada
+    }
+
+public function team()
+{
+    return $this->hasOne(Team::class);
+}
 }
