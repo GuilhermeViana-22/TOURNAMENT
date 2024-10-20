@@ -6,6 +6,7 @@
     <link rel="icon" href="{{ asset('/asset/lendas/shang.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="{{ asset('css/green.css') }}" id="theme-color">
+    <link rel="stylesheet" href="{{ asset('css/anime.css') }}" id="theme-color">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Mokoto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -40,5 +41,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="{{ asset('js/scripts.js') }}"></script>
+<script src="{{ asset('js/anime.js') }}"></script>
+<script src="{{ asset('js/layout.js') }}"></script>
 
 </html>

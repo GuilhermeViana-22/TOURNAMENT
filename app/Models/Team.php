@@ -3,25 +3,23 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Team extends Model
 {
-    use HasFactory;
+    protected $fillable = ['name', 'user_id', 'member_id'];
 
-    protected $fillable = [
-        'user_id',
-        'nickname_user',    
-        'nickname_team',   
-        'duo_name',    
-        'contact_phone', 
-        'discord',       
-    ];
-
-
-
-    public function user()
+    public function leader()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function member()
+    {
+        return $this->belongsTo(User::class, 'member_id');
+    }
+
+    public static function userHasTeam($userId)
+    {
+        return self::where('user_id', $userId)->exists();
     }
 }
