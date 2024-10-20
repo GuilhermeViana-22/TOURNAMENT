@@ -1,0 +1,36 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-C-mq5tJn.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/auth.css": {
+    "file": "assets/auth-l0sNRNKZ.js",
+    "name": "auth",
+    "src": "resources/css/auth.css",
+    "isEntry": true
+  },
+  "resources/css/bracket.scss": {
+    "file": "assets/bracket-Chvo6Fgw.css",
+    "src": "resources/css/bracket.scss",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C5iY3TvR.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/main.js": {
+    "file": "assets/main-DnNZgA1n.js",
+    "name": "main",
+    "src": "resources/js/main.js",
+    "isEntry": true
+  },
+  "resources/js/sweetalert2.js": {
+    "file": "assets/sweetalert2-DDv3NVa1.js",
+    "name": "sweetalert2",
+    "src": "resources/js/sweetalert2.js",
+    "isEntry": true
+  }
+}

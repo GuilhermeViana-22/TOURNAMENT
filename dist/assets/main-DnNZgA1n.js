@@ -1,0 +1,1 @@
+const e=document.querySelectorAll("[data-anime]"),o="animate";function i(){const t=window.pageYOffset+window.innerHeight*3/4;e.forEach(n=>{t>n.offsetTop?n.classList.add(o):n.classList.remove(o)})}window.addEventListener("scroll",function(){i()});

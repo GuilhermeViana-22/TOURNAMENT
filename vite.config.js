@@ -20,4 +20,8 @@ export default defineConfig({
             '$': 'jquery',  // Define jQuery como alias para o símbolo $ globalmente
         },
     },
+    build: {
+        outDir: 'dist',  // Certifique-se de que o diretório de saída está definido como 'dist'
+        emptyOutDir: true // Limpa a pasta 'dist' antes de cada build (opcional)
+    },
 });
