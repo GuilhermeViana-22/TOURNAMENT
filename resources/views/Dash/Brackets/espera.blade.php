@@ -19,5 +19,6 @@
                 poderemos organizar melhor para que mais equipes lutem juntas.
             </p>
         </div>
+        {{-- aloha --}}
     </div>
 </x-app-layout>
