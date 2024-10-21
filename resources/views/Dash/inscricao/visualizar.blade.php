@@ -67,21 +67,7 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div x-data="{ open: false }" class="fixed z-10 inset-0 overflow-y-auto" aria-hidden="true" x-show="open">
-        <div class="flex items-center justify-center min-h-screen px-4 text-center">
-            <div class="fixed inset-0 transition-opacity" aria-hidden="true" x-show="open">
-                <div class="absolute inset-0 bg-black opacity-30"></div>
-            </div>
-            <div class="inline-block w-full max-w-md p-6 my-8 bg-white rounded-lg shadow-lg">
-                <h3 class="text-lg font-semibold">Detalhes do Registro</h3>
-                <p class="mt-2 text-gray-600">Aqui você pode visualizar os detalhes do registro.</p>
-                <div class="mt-4">
-                    <button @click="open = false" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </x-app-layout>
 
 <script>

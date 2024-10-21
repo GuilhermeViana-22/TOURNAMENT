@@ -1,0 +1,125 @@
+/* Estilos globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Container do formulário */
+form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs e Labels */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    transition: border 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6b73ff;
+    outline: none;
+}
+
+label {
+    font-weight: 500;
+    color: #666;
+}
+
+/* Checkbox Lembrar-me */
+.inline-flex.items-center input {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+.inline-flex.items-center span {
+    color: #666;
+}
+
+/* Links e Botões */
+a {
+    color: #6b73ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000dff;
+}
+
+button, .inline-flex.items-center {
+    background-color: #6b73ff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .inline-flex.items-center:hover {
+    background-color: #000dff;
+}
+
+button:focus, .inline-flex.items-center:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(107, 115, 255, 0.3);
+}
+
+/* Esqueci minha senha */
+.underline {
+    margin-top: 10px;
+}
+
+/* Espaçamento flexível entre elementos */
+.flex.items-center.justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    form {
+        padding: 20px;
+    }
+
+    button, .inline-flex.items-center {
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex.space-x-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
