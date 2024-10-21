@@ -24,7 +24,7 @@ class InscricaoController extends Controller
         }
 
         // Retorna a view com o usuário autenticado
-        return view('dash.inscricao.inscricao', compact('user'));
+        return view('Dash.inscricao.inscricao', compact('user'));
     }
 
     public function cadastrar(CadastrarRequest $request)
