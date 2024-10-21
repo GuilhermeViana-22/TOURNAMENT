@@ -24,7 +24,7 @@ class DashboardController extends Controller
                 ->where('user_id', auth()->user()->id);
         })
         ->get();
-        return view('dash.Equipe.index', compact('users'));
+        return view('Dash.Equipe.index', compact('users'));
       
     }
 

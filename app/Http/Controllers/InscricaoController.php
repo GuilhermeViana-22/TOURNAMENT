@@ -61,7 +61,7 @@ class InscricaoController extends Controller
     $user = auth()->user();
 
        $register = Inscricao::findOrFail($id); // Obtém o registro pelo ID
-       return view('dash.inscricao.editar', compact('user','register')); // Retorna a view de edição com os dados do registro
+       return view('Dash.inscricao.editar', compact('user','register')); // Retorna a view de edição com os dados do registro
    }
 
    // Método para atualizar o registro
@@ -101,7 +101,7 @@ class InscricaoController extends Controller
         $team = Team::where('user_id', $user->id)->first();
 
         // Retorna a view com o usuário autenticado e a equipe
-        return view('dash.inscricao.visualizar', compact('user', 'Register', 'team'));
+        return view('Dash.inscricao.visualizar', compact('user', 'Register', 'team'));
     }
 
     public function deletar(Request $request)
